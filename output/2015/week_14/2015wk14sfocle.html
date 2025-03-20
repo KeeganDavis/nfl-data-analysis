@@ -512,6 +512,24 @@
                             <div id="statGraph"></div>
                         </div>
                     </div>
+                    <!-- Button to expand chart -->
+                    <div class="card-footer text-center">
+                        <button id="expandChartBtn" class="btn btn-primary w-auto mb-3">Expand Chart (Mobile)</button>
+                    </div>
+
+                    <div class="modal fade" id="chartModal" tabindex="-1" aria-labelledby="chartModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content">
+                                <div class="modal-header text-center">
+                                    <h5 class="modal-title" id="chartModalLabel">Full-Screen Chart</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div id="fullScreenChart"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
