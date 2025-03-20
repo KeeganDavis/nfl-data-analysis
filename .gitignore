@@ -3,6 +3,9 @@ analysis_functions.py
 generate_site.py
 __pycache__
 
+# data
+/data
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
