@@ -1,3 +1,8 @@
+# python files for generating site and running calculations
+analysis_functions.py
+generate_site.py
+__pycache__
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
