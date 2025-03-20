@@ -366,4 +366,18 @@ document.addEventListener("DOMContentLoaded", function () {
     // Load Initial Graph
     updateGraph();
 
+    // Button to expand plotly chart to fullscreen
+    document.getElementById("expandChartBtn").addEventListener("click", function () {
+        // Copy the current chart data
+        let chartData = document.getElementById("statGraph").data;
+        let chartLayout = document.getElementById("statGraph").layout;
+
+        // Open modal
+        let modal = new bootstrap.Modal(document.getElementById("chartModal"));
+        modal.show();
+
+        // Render the chart inside the modal
+        Plotly.newPlot("fullScreenChart", chartData, chartLayout, { responsive: true });
+    });
+
 });
